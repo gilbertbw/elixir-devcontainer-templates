@@ -1,0 +1,34 @@
+{
+    "id": "elixir",
+    "version": "0.0.1",
+    "name": "Hello, World",
+    "description": "A hello world Template",
+    "documentationURL": "https://github.com/gilbertbw/elixir-devcontainer-templates/tree/main/src/hello",
+    "licenseURL": "https://github.com/gilbertbw/elixir-devcontainer-templates/blob/main/LICENSE",
+    "options": {
+        "elixirVersion": {
+            "type": "string",
+            "description": "Elixir version (see https://hub.docker.com/_/elixir for a full list of tags):",
+            "proposals": [
+                "latest",
+                "1.17",
+                "1.17-otp-27"
+            ],
+            "default": "jammy"
+        },
+        "greeting": {
+            "type": "string",
+            "description": "Select a pre-made greeting, or enter your own",
+            "proposals": [
+                "hey",
+                "hello",
+                "hi",
+                "howdy"
+            ],
+            "default": "hey"
+        }
+    },
+    "platforms": [
+        "Any"
+    ]
+}
